@@ -1,46 +1,45 @@
-# Thông tin giao thông 🚦
+# Traffic Information 🚦
 
-## 🎉 Giới thiệu
+## 🎉 Introduction
 
-Đây là dự án thông tin giao thông tại Bình Định sử dụng hệ thống camera được thiết lập sẵn để hỗ trợ các công ty và chính phủ trong việc kiểm soát an ninh và tình trạng giao thông trong khu vực.
+Using a pre-installed camera system, this traffic information project in Binh Dinh helps businesses and governments manage the security and traffic situations in the area.
 
-## ✨ Các tính năng
+## ✨ Features
 
-- Đăng ký, đăng nhập, đăng xuất người dùng với Auth0
-- Xác thực người dùng: 
-+ Phân quyền, bảo vệ `route` theo quyền được cho phép. 
-+ Kiểm tra nếu không có quyền được cho phép thì sẽ chuyển hướng đến trang `/unauthorized`.
-+ Kiểm tra xem người dùng có bị khóa hay không, nếu có thì sẽ hiển thị thông báo cho người dùng biết tài khoản đã bị khóa.
-+ Bản đồ: xem tổng quan các thông tin về cảnh báo giao thông, camera giao thông, công trình thi công, bãi đỗ xe, phân luồng giao thông và thông tin tĩnh. 
-- Quản lý:
-+ ` Cảnh báo giao thông:` tạo cảnh báo, hiển thị các cảnh báo mới
-+ ` Camera giao thông:` hiển thị danh sách các camera theo khu vực, thêm - xóa - sửa camera và nhóm camera theo quyền `admin` hoặc `superadmin`, xuất dữ liệu: csv, excel, json theo quyền `admin` hoặc `superadmin`
-+ ` Công trình thi công:` hiển thị danh sách các công trình thi công, thêm - xóa - sửa dữ liệu công trình theo quyền `admin` hoặc `superadmin`, xuất dữ liệu: csv, excel, json theo quyền `admin` hoặc `superadmin`
-+ ` Bãi đỗ xe:` hiển thị danh sách các bãi đỗ xe, thêm - xóa - sửa dữ liệu bãi đỗ xe theo quyền `admin` hoặc `superadmin`, xuất dữ liệu: csv, excel, json theo quyền `admin` hoặc `superadmin`
-+ ` Phân luồng giao thông:` hiển thị danh sách phân luồng giao thông, thêm - xóa - sửa dữ liệu phân luồng giao thông theo quyền `admin` hoặc `superadmin`, xuất dữ liệu: csv, excel, json theo quyền `admin` hoặc `superadmin`
-+ ` Lớp thông tinh tĩnh:` hiển thị danh sách thông tin tĩnh, thêm - xóa - sửa dữ liệu lớp thông tin tĩnh theo quyền `admin` hoặc `superadmin`, xuất dữ liệu: csv, excel, json theo quyền `admin` hoặc `superadmin`
-- Quản trị:
-+ ` Cấu hình:` cấu hình tình trạng camera, tình trạng giao thông, sự kiện giao thông theo quyền `admin` hoặc `superadmin` .
-+ ` Người dùng:` hiển thị danh sách người dùng trong hệ thống, thống kê tài khoản, chỉnh sửa quyền người dùng: `khách`, `người dùng`, `quản lý`. `Khóa` và `mở khóa` người dùng
-+ ` Nhóm người dùng:` hiển thị danh sách nhóm người dùng, thêm nhóm người dùng và thiết lập quyền được cho phép: `không có quyền`, `truy cập`, `chỉnh sửa`, `quản lý` vào các tài nguyên hệ thống.
-- Thống kê:
-+ `Thống kê cảnh báo:` hiển thị biểu đồ các cảnh báo theo `ngày`, `hàng tuần`, `hàng tháng`.
+- User registration, login, and logout with Auth0
+- User authentication: 
++ Decentralize and safeguard `route` in accordance with permitted permissions. 
++ Redirects to `/unauthorized` if authorization is not granted, according to the check.
++ A notification informing the user that their account has been locked will be displayed if the user is locked.
+- Map: a general overview of traffic cameras, traffic alerts, road event, parking lots, traffic separation, and static data. 
+- Manage:
++ `Traffic alerts:` create alerts, show new alerts
++ `Traffic cameras:` a list of cameras organized by location cameras and camera groups can be added, removed, or edited using the `admin` or `superadmin` rights, CSV, Excel, and JSON data can be exported with the `admin` or `superadmin` permissions.
++ `Road event:` display a list of active construction projects, add, remove, or update construction data with `admin` or `superadmin` permissions, and export data to csv, excel, or json with the same rights
++ `Parking:` display a list of parking lots, add, remove, or update parking information with `admin` or `superadmin` rights, and export data in csv, excel, or json with the same permissions.
++ `Traffic event:` display the traffic flow list, add, remove, or change the traffic flow data with the `admin` or `superadmin` permissions, and export the data to csv, excel, or json with those permissions.
++ `Static information:` Under `admin` or `superadmin` permission, you can add, remove, or change class data static information. You can also export data in the following formats: csv, excel, and json.
+- Administration:
++ ` Settings:` Under `admin` or `superadmin` permissions, configure camera status, traffic conditions, and traffic events.
++ ` Users:` display the system's user list, account statistics, and editable user permissions for `guest`,`user`, and `manager`. User `lock` and `unlock`
++ ` Groups:` display user group list, create user groups, and configure permissions to allow: `access`, `permission`, `editing`, `management` of system resources.
+- Statistic:
++ `Warning statistics:` show a graph of alerts broken down by `day`, `weekly` and `monthly`.
 
-## 💻 Công nghệ sử dụng
+## 💻 Using technologies
 - [Angular](https://angular.io/)
 - [NodeJS](https://nodejs.org/en/)
 - [MongoDB](https://www.mongodb.com/)
 - [Auth0](https://auth0.com/)
-- và các công nghệ khác.
+- another technologies.
 
-## 👤 Phía người dùng
+## 👤 Client side
 
-Dự án được tạo với [Angular CLI](https://github.com/angular/angular-cli)  v13.2.5.
-Để chạy dự án bạn cần phải cài đặt các module, bạn cần sử dụng câu lệnh `npm install`, sau đó sử dụng câu lệnh `npm start` để chạy dự án phía người dùng
-
-### ⚙️ Thiết lập Auth0
-- Sử dụng câu lệnh để cài đặt module Auth0: `npm install @auth0/auth0-angular`
-- Mở file `app.module.ts` sau đó cấu hình theo dưới đây:
+Project made using [Angular CLI](https://github.com/angular/angular-cli)  v13.2.5.
+You must use the `npm install` command to install the modules before using the `npm start` command to launch the user-side project.
+### ⚙️ Auth0 Settings
+- The Auth0 module can be installed with the command.: `npm install @auth0/auth0-angular`
+- Open file `app.module.ts` then set up as follows:
 
 ```
  import { BrowserModule } from '@angular/platform-browser';
@@ -62,8 +61,8 @@ Dự án được tạo với [Angular CLI](https://github.com/angular/angular-c
  export class AppModule {}
  ```
  
-- Để cấu hình Auth0 quyền người cần làm theo các bước sau đây:
-+ Vào trang Auth0: Chọn Auth Pipeline ==> chọn Rule ==> Chọn Create ==> Empty Rule ==> Tạo Name và dán đoạn mã sau đây vào Script:
+- The following steps must be taken in order to configure Auth0 user permissions.:
++ Access to Auth0: Choose Auth Pipeline ==> Rule ==> Create ==> Empty Rule ==> Create Name and paste the following code into the Script:
 
 ``` 
 function (user, context, callback) {
@@ -97,10 +96,10 @@ function (user, context, callback) {
 }
 ```
 
-Sau đó nhấn Save change.
+Then click Save change.
 
-- Để cấu hình Auth0 trả về `appmetadata` trong `access token` ta làm các bước như cấu hình quyền người dùng với Auth Pipeline ở trên:
-+ dán đoạn mã sau đây vào Script:
+- The same procedures as described above for configuring user permissions using the Auth Pipeline are used to setup Auth0 to return `appmetadata` in the `access token`:
++ paste the following code into the Script:
 
 ```
 function (user, context, callback) {
@@ -123,10 +122,10 @@ function (user, context, callback) {
 }
 ```
 
-Sau đó nhấn Save change.
+Then click Save change.
 
-- Để cấu hình Auth0 trả về name và appmetadata trong `access token`:
-+ dán đoạn mã sau đây vào Script:
+- Setting up Auth0 such that it returns name and appmetadata in the `access token`
++ paste the following code into the Script:
 
 ```
 function (user, context, callback) {
@@ -142,15 +141,15 @@ function (user, context, callback) {
 }
 ```
 
-Sau đó nhấn Save change.
+Then click Save change.
 
-## 🖥 Phía máy chủ
+## 🖥 Server side
 
-- Dự án được tạo với [NodeJS](https://nodejs.org/en/)  v14.15.4.
-- Để chạy dự án bạn cần phải cài đặt các module, bạn cần sử dụng câu lệnh `npm install`, sau đó sử dụng câu lệnh `npm start` để chạy dự án phía máy chủ
+- Project made using [NodeJS](https://nodejs.org/en/)  v14.15.4.
+- You must use the `npm install` command to install the modules before using the `npm start` command to launch the user-side project.
 
-## ✅ Kiểm thử
-- Tài khoản dành cho `khách`: `email` guest@gmail.com `password` Guest123@
-- Tài khoản dành cho `người dùng`: `email` user@gmail.com `password` User123@
-- Tài khoản dành cho `quản lý`: `email` admin@gmail.com `password` Admin123@
-- Tài khoản dành cho `siêu quản lý`: `email` superadmin@gmail.com `password` Superadmin123@  
+## ✅ Testing
+- For `guest` account: `email` guest@gmail.com `password` Guest123@
+- For `user` account: `email` user@gmail.com `password` User123@
+- For `admin` account: `email` admin@gmail.com `password` Admin123@
+- For `superadmin` account: `email` superadmin@gmail.com `password` Superadmin123@  
