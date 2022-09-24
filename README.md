@@ -146,7 +146,7 @@ Then click Save change.
 ## 🖥 Server side
 
 - Project made using [NodeJS](https://nodejs.org/en/)  v14.15.4.
-- You must use the `npm install` command to install the modules before using the `npm start` command to launch the user-side project.
+- You must use the `npm install` command to install the modules before using the `npm start` command to launch the server-side project.
 
 ## ✅ Testing
 - For `guest` account: `email` guest@gmail.com `password` Guest123@
